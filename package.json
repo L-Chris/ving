@@ -6,6 +6,13 @@
   "repository": "https://github.com/L-Chris/ving",
   "author": "L-Chris <563303226@qq.com>",
   "license": "MIT",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "bin": {
+    "ving": "./bin/ving"
+  },
   "dependencies": {
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
