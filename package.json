@@ -1,0 +1,15 @@
+{
+  "name": "ving",
+  "version": "0.0.1",
+  "description": "use vue with wing",
+  "main": "src/index.js",
+  "repository": "https://github.com/L-Chris/ving",
+  "author": "L-Chris <563303226@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "webpack": "^4.19.1"
+  }
+}
