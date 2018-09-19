@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log('dev')
+const Ving = require('..')
+
+const ving = new Ving()

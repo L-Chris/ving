@@ -5,12 +5,20 @@ const { join } = require('path')
 const defaultCommand = 'dev'
 const commands = new Set([defaultCommand, 'build'])
 
-var cmd = process.argv[2]
+var cmd = process.argv[2] || defaultCommand
 
 if (commands.has(cmd)) {
   process.argv.splice(2, 1)
 } else {
-  cmd = defaultCommand
+  return console.log(`
+    Usage: vue <command> [options]
+
+    Options
+      dev     run ving dev
+      build   build ving app
+
+    Unknown command ${cmd}.
+  `)
 }
 
 const bin = join(__dirname, `ving-${cmd}`)

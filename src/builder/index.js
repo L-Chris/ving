@@ -1,4 +1,10 @@
-import webpack from 'webpack'
-import baseWebpackConf from './webpack/base.config'
+const webpack = require('webpack')
+const devServer = require('webpack-dev-server')
+const baseWebpackConf = require('./webpack/base.config')
 
-webpack(baseWebpackConf)
+module.exports = class Builder {
+  constructor () {
+    this.compiler = webpack(baseWebpackConf)
+  }
+}
+
