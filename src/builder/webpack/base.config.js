@@ -14,16 +14,24 @@ module.exports = {
     ],
   },
   devServer: {
-    clientLogLevel: 'warning',
+    clientLogLevel: 'none',
+    historyApiFallback: {
+      disableDotRule: true,
+      rewrites: [
+        { from: /./, to: path.join(__dirname, '../../', 'app/public/index.html') }
+      ]
+    },
     hot: true,
-    compress: true,
-    port: '8081',
+    host: 'localhost',
+    port: '8080',
     open: true,
-    quiet: true, // necessary for FriendlyErrorsPlugin
+    quiet: true,
+    overlay: { warnings: false, errors: true }
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'test'
+      title: 'ving',
+      template: path.join(__dirname, '../../', 'app/public/index.html')
     })
   ]
 }

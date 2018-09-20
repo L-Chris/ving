@@ -3,3 +3,5 @@
 const Ving = require('..')
 
 const ving = new Ving()
+
+ving.run()

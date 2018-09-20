@@ -13,18 +13,16 @@
   "bin": {
     "ving": "./bin/ving"
   },
-  "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config src/builder/webpack/base.config.js"
-  },
   "dependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.2",
     "html-webpack-plugin": "^4.0.0-alpha.2",
+    "portfinder": "^1.0.17",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
   }
 }

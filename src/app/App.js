@@ -1,7 +1,12 @@
 export default {
-  el: '#__nuxt',
+  el: '#ving',
   render (h) {
-    return h('div')
+    return h('h1', {
+      domProps: {
+        id: 'ving',
+        innerText: 'Hello Ving!'
+      }
+    })
   },
   data () {
     return {

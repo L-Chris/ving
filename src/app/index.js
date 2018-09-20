@@ -3,7 +3,7 @@ import App from './App'
 import { createRouter } from './router'
 import { createStore } from './store'
 
-export async function createApp (context) {
+export function createApp () {
   const router = createRouter()
   const store = createStore()
 
@@ -13,3 +13,5 @@ export async function createApp (context) {
     ...App
   })
 }
+
+createApp()
