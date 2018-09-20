@@ -7,12 +7,8 @@ module.exports = class Ving {
   }
 
   run () {
-    this.getConfig()
     this.builder.run()
   }
-
-  // 获取配置
-  getConfig () {}
 
   static get version () {
     return version

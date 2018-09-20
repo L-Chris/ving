@@ -9,18 +9,22 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
+        }
       }
     ],
   },
   devServer: {
-    clientLogLevel: 'none',
+    clientLogLevel: 'warning',
     historyApiFallback: {
       disableDotRule: true,
       rewrites: [
         { from: /./, to: path.join(__dirname, '../../', 'app/public/index.html') }
       ]
     },
+    progress: true,
     hot: true,
     host: 'localhost',
     port: '8080',
